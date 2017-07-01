@@ -1,0 +1,23 @@
+<body>
+  <div class = "container">
+  <h1>Welcome to Meteor!</h1>
+  <div>
+    {{> hello}}
+  </div>
+  <ul>
+      {{#each items}}
+        {{> item}}
+      {{/each}}
+  </ul>
+  </div>
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<!-- 品物 -->
+<template name="item">
+  <li>{{name}}</li>
+</template> 
